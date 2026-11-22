@@ -29,6 +29,34 @@
       "capabilities": [
         "action"
       ]
+    },
+    {
+      "id": "unic.syncclipboard",
+      "name": "SyncClipboard 同步",
+      "author": "UniClipboard 官方",
+      "official": true,
+      "category": "sync",
+      "version": "0.1.0",
+      "summary": "通过 SyncClipboard 客户端双向同步文字和图片。需要支持外部渠道授权的 UniClipboard v2 宿主。",
+      "description": "为兼容客户端提供文字和图片同步，单条内容上限为 2 MiB。当前为预览版本。宿主须支持渠道授权和注册。已验证宿主提交 87afcda15。公开版用户需等待宿主更新。",
+      "highlights": [
+        "独立同步插件",
+        "每个客户端使用独立渠道凭据",
+        "提供 macOS、Linux 和 Windows 预编译包"
+      ],
+      "how_to": [
+        "在兼容宿主上安装插件",
+        "按插件仓库说明配置密钥、启用插件并重启服务",
+        "为客户端注册渠道。跨设备连接使用 HTTPS 反向代理地址"
+      ],
+      "privacy": "渠道凭据决定客户端可访问的内容。监听器仅绑定回环地址，跨设备访问由你配置的 HTTPS 反向代理提供。",
+      "zero_config": false,
+      "repository": "https://github.com/UniClipboard/unic-plugin-syncclipboard",
+      "ref": "5e8101d6b0158099dc89a82bd95078b6c9a9ea9a",
+      "build_fallback": false,
+      "capabilities": [
+        "sync_backend"
+      ]
     }
   ]
 }
