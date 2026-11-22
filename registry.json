@@ -8,7 +8,7 @@
       "author": "UniClipboard 官方",
       "official": true,
       "category": "share",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "summary": "将选中的文本、图片或文件一键生成约 24 小时有效的临时下载链接。",
       "description": "无需登录账号、无需任何配置。在剪贴板历史中选中文本、图片或文件并触发动作，插件会将所选内容上传至文叔叔，并将公开下载链接作为新历史条目返回。",
       "highlights": [
@@ -24,7 +24,7 @@
       "privacy": "仅在你主动点击分享动作时上传所选条目；安装或启用不会自动上传剪贴板内容。",
       "zero_config": true,
       "repository": "https://github.com/UniClipboard/unic-plugin-wenshushu",
-      "ref": "4acfa60b611c52ba8235ddda2130e326725b7bf2",
+      "ref": "8e0c92fcb0a033cc0a934ef6ec193b391ad104e1",
       "build_fallback": true,
       "capabilities": [
         "action"
