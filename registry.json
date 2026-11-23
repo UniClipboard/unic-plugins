@@ -4,6 +4,7 @@
   "plugins": [
     {
       "id": "unic.security",
+      "icon": "shield",
       "name": "敏感内容拦截",
       "author": "UniClipboard 官方",
       "official": true,
@@ -32,6 +33,7 @@
     },
     {
       "id": "unic.wenshushu",
+      "icon": "link",
       "name": "文叔叔临时分享",
       "author": "UniClipboard 官方",
       "official": true,
@@ -60,6 +62,7 @@
     },
     {
       "id": "unic.wormhole",
+      "icon": "lock",
       "name": "Wormhole 临时分享",
       "author": "UniClipboard 官方",
       "official": true,
@@ -88,6 +91,7 @@
     },
     {
       "id": "unic.syncclipboard",
+      "icon": "devices",
       "name": "SyncClipboard 同步",
       "author": "UniClipboard 官方",
       "official": true,
@@ -116,6 +120,7 @@
     },
     {
       "id": "unic.wxime",
+      "icon": "text",
       "name": "微信输入法剪贴板",
       "author": "mkdir700",
       "official": false,
