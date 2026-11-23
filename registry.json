@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-22",
+  "updated_at": "2026-11-23",
   "plugins": [
     {
       "id": "unic.wenshushu",
@@ -25,6 +25,34 @@
       "zero_config": true,
       "repository": "https://github.com/UniClipboard/unic-plugin-wenshushu",
       "ref": "8e0c92fcb0a033cc0a934ef6ec193b391ad104e1",
+      "build_fallback": true,
+      "capabilities": [
+        "action"
+      ]
+    },
+    {
+      "id": "unic.wormhole",
+      "name": "Wormhole 临时分享",
+      "author": "UniClipboard 官方",
+      "official": true,
+      "category": "share",
+      "version": "0.1.0",
+      "summary": "将选中的文本、图片或文件生成端到端加密的临时下载链接。",
+      "description": "无需账号或配置。在剪贴板历史中选中条目并触发分享动作。上传完成后，链接会保存为一条新的历史记录。",
+      "highlights": [
+        "端到端加密",
+        "支持文本、图片和多个文件",
+        "约 24 小时自动过期"
+      ],
+      "how_to": [
+        "在剪贴板历史中选中一条文本、图片或文件",
+        "打开「动作」并点击「通过 Wormhole 临时分享」",
+        "将下载链接发送给接收方"
+      ],
+      "privacy": "仅在主动触发动作时上传加密内容。解密密钥在链接片段中，任何持有完整链接的人都可以下载并解密。",
+      "zero_config": true,
+      "repository": "https://github.com/UniClipboard/unic-plugin-wormhole",
+      "ref": "6b4fd2e7efae996539e1f00522003b312088b58d",
       "build_fallback": true,
       "capabilities": [
         "action"
