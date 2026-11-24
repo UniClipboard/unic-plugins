@@ -142,7 +142,7 @@
       "privacy": "仅在完成分组配对且渠道启用时，与微信输入法云端分组收发剪贴板内容；各插件实例持有独立设备身份与本地状态。",
       "zero_config": false,
       "repository": "https://github.com/mkdir700/unic-plugin-wxime",
-      "ref": "5f2652b8e6af80eca62751b2d83edf3f16d29afd",
+      "ref": "33db62cf792cec5f01839e7eff08a9ea8a88052d",
       "build_fallback": false,
       "capabilities": [
         "sync_backend"
