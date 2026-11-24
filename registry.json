@@ -125,23 +125,24 @@
       "author": "mkdir700",
       "official": false,
       "category": "sync",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "summary": "连接微信输入法跨设备剪贴板分组，双向同步文字和图片。需要支持外部渠道配对的 UniClipboard v2 宿主。",
-      "description": "通过微信输入法（WeType）跨设备剪贴板分组双向同步剪贴板内容，默认同步 UTF-8 文字（上限 1 MiB），可在插件设置中开启图片同步（PNG/JPEG，发送上限 16 MiB），不支持文件传输。当前为预览版本，宿主须支持外部渠道配对（unic channel pair），已验证宿主提交 e23ad1071。",
+      "description": "通过微信输入法（WeType）跨设备剪贴板分组双向同步剪贴板内容。文字须为 UTF-8，上限 1 MiB。支持发送 PNG 和接收 PNG、JPEG，发送图片上限 16 MiB。宿主须支持外部渠道配对。",
       "highlights": [
         "独立外部渠道同步插件，持有独立设备身份",
-        "默认同步文字，图片同步按需开启",
+        "通过 UniClipboard 的同步策略设置双向文字和图片同步",
         "提供 macOS、Linux 和 Windows 预编译包"
       ],
       "how_to": [
         "在兼容宿主上安装并启用插件，然后重启服务",
-        "在微信输入法中为已授权分组生成配对码，运行 unic channel pair unic.wxime 完成配对",
-        "如需同步图片，请在插件设置中开启 images、重启服务并执行 unic channel pair unic.wxime --resume"
+        "首次使用时，在微信输入法中为已授权分组生成配对码，运行 unic channel pair unic.wxime 完成配对",
+        "从旧版升级后，运行 unic channel pair unic.wxime --resume 恢复现有渠道授权",
+        "在插件的「同步策略」中使用「同步图片」开关，修改即时生效"
       ],
       "privacy": "仅在完成分组配对且渠道启用时，与微信输入法云端分组收发剪贴板内容；各插件实例持有独立设备身份与本地状态。",
       "zero_config": false,
       "repository": "https://github.com/mkdir700/unic-plugin-wxime",
-      "ref": "fa8b925a23e43b918e2694e3cf9dd4865de3e067",
+      "ref": "5f2652b8e6af80eca62751b2d83edf3f16d29afd",
       "build_fallback": false,
       "capabilities": [
         "sync_backend"
