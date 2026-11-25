@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-25",
+  "updated_at": "2026-11-26",
   "plugins": [
     {
       "id": "unic.security",
@@ -125,9 +125,9 @@
       "author": "mkdir700",
       "official": false,
       "category": "sync",
-      "version": "0.1.3",
+      "version": "0.1.5",
       "summary": "连接微信输入法跨设备剪贴板分组，双向同步文字和图片。需要支持单张图片文件转换的 UniClipboard v2 宿主。",
-      "description": "通过微信输入法（WeType）跨设备剪贴板分组双向同步剪贴板内容。文字须为 UTF-8，上限 1 MiB。支持发送 PNG 和接收 PNG、JPEG，发送图片上限 16 MiB。宿主须支持外部渠道配对。 宿主能提供 PNG 表示时，支持将单张复制的图片文件按图片发送。需要 UniClipboard 桌面版 2.0.0-build.6 或更高版本。",
+      "description": "通过微信输入法（WeType）跨设备剪贴板分组双向同步剪贴板内容。文字须为 UTF-8，上限 1 MiB。支持发送 PNG（上限 16 MiB），以及接收 PNG、JPEG、HEIC/HEIF、WebP 和 GIF（自动校正方向并在超出限制时降采样转 PNG）。宿主须支持外部渠道配对。宿主能提供 PNG 表示时，支持将单张复制的图片文件按图片发送。需要 UniClipboard 桌面版 2.0.0-build.6 或更高版本。",
       "highlights": [
         "独立外部渠道同步插件，持有独立设备身份",
         "通过 UniClipboard 的同步策略设置双向文字和图片同步",
@@ -143,7 +143,7 @@
       "privacy": "仅在完成分组配对且渠道启用时，与微信输入法云端分组收发剪贴板内容；各插件实例持有独立设备身份与本地状态。",
       "zero_config": false,
       "repository": "https://github.com/mkdir700/unic-plugin-wxime",
-      "ref": "442852603462f944fd66241fac53cd6e97f95da9",
+      "ref": "410c643bcf4a797a88be72583ac04b577914c842",
       "build_fallback": false,
       "capabilities": [
         "sync_backend"
