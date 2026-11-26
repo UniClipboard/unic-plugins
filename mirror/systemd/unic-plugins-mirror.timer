@@ -1,0 +1,11 @@
+[Unit]
+Description=Periodically sync UniClipboard plugin marketplace mirror
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=10min
+RandomizedDelaySec=60
+Persistent=true
+
+[Install]
+WantedBy=timers.target

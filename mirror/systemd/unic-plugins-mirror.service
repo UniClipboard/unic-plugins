@@ -1,0 +1,18 @@
+[Unit]
+Description=Sync UniClipboard plugin marketplace static mirror (plugins.uniclipboard.app)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/etc/unic-plugins-mirror.env
+ExecStart=/usr/bin/python3 /opt/unic-plugins-mirror/sync_mirror.py \
+  --output-dir /opt/1panel/apps/openresty/openresty/www/sites/plugins.uniclipboard.app/index \
+  --domain plugins.uniclipboard.app \
+  --max-bytes 2147483648 \
+  --prune
+TimeoutStartSec=300
+NoNewPrivileges=true
+PrivateTmp=true
+StandardOutput=journal
+StandardError=journal
